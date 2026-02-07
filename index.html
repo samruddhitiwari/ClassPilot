@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClassPilot Attendance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>ClassPilot Attendance</h1>
+        <p class="muted">
+          Load a class roster and mark attendance in bulk. Your selections are saved to Supabase.
+        </p>
+        <form class="form" action="attendance.html" method="get">
+          <label>
+            Class ID
+            <input name="class_id" type="text" placeholder="UUID" required />
+          </label>
+          <label>
+            Attendance date
+            <input name="date" type="date" required />
+          </label>
+          <button class="primary" type="submit">Open attendance</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
