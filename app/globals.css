@@ -105,3 +105,29 @@ a {
   font-size: 12px;
   font-weight: 600;
 }
+
+.section-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pill {
+  align-self: flex-start;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.pill--paid {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.pill--free {
+  background: #e2e8f0;
+  color: #0f172a;
+}
