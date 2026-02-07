@@ -60,6 +60,9 @@ export default function Home() {
           <Link href="/signup" className="button">
             Create an account
           </Link>
+          <Link href="/attendance" className="button">
+            Manage attendance
+          </Link>
         </div>
       </div>
     </main>
