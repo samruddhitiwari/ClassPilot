@@ -21,12 +21,20 @@ a {
   padding: 48px 20px;
 }
 
+.page--top {
+  align-items: flex-start;
+}
+
 .card {
   width: min(480px, 100%);
   background: #ffffff;
   border-radius: 16px;
   padding: 32px;
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.card--wide {
+  width: min(920px, 100%);
 }
 
 .stack {
@@ -130,4 +138,122 @@ a {
 .pill--free {
   background: #e2e8f0;
   color: #0f172a;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #1f2a44;
+}
+
+.form input,
+.form select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #d6dbe8;
+  font: inherit;
+}
+
+.form button {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #e8ecf7;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form button.primary {
+  background: #2f6af5;
+  color: #fff;
+}
+
+.form button.primary:hover {
+  background: #2554c4;
+}
+
+.status {
+  margin-top: 16px;
+}
+
+.status.success {
+  color: #1b8f4b;
+}
+
+.status.error {
+  color: #b42318;
+}
+
+.status.warning {
+  color: #b54708;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.roster {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.toolbar-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.students {
+  display: grid;
+  gap: 12px;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8f9fd;
+  border-radius: 16px;
+}
+
+.student-name {
+  display: grid;
+  gap: 4px;
+}
+
+.student-name span {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .student-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }

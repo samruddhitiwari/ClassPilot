@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'ClassPilot Auth',
-  description: 'Supabase authentication for ClassPilot'
+  title: 'ClassPilot',
+  description: 'ClassPilot app with Supabase authentication and attendance tracking.'
 };
 
 export default function RootLayout({
